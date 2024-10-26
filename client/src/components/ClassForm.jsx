@@ -16,15 +16,15 @@ const ClassForm = ({ addClass }) => {
   };
 
   return (
-    <div className="bg-blue-500 p-6 fixed top-0 w-full md:w-2/3 lg:w-1/2 mx-auto shadow-lg">
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <div className="bg-green-300 p-6 w-full shadow-lg mt-16">
+    <form onSubmit={handleSubmit} className="space-y-4 w-3/4 md:w-1/2 mx-auto">
       <input 
         type="text" 
         name="title" 
         placeholder="Title" 
         value={formData.title} 
         onChange={handleInputChange} 
-        className="w-full p-2 border border-gray-300 rounded-md"
+        className="w-full p-2 border border-gray-800 rounded-md"
       />
       <input 
         type="text" 
@@ -32,14 +32,14 @@ const ClassForm = ({ addClass }) => {
         placeholder="Description" 
         value={formData.description} 
         onChange={handleInputChange} 
-        className="w-full p-2 border border-gray-300 rounded-md"
+        className="w-full p-2 border  border-gray-800  rounded-md"
       />
       <input 
         type="date" 
         name="date" 
         value={formData.date} 
         onChange={handleInputChange} 
-        className="w-full p-2 border border-gray-300 rounded-md"
+        className="w-full p-2 border border-gray-800 rounded-md"
       />
       <input 
         type="text" 
@@ -47,7 +47,7 @@ const ClassForm = ({ addClass }) => {
         placeholder="Start Time" 
         value={formData.startTime} 
         onChange={handleInputChange} 
-        className="w-full p-2 border border-gray-300 rounded-md"
+        className="w-full p-2 border border-gray-800 rounded-md"
       />
       <input 
         type="text" 
@@ -55,7 +55,7 @@ const ClassForm = ({ addClass }) => {
         placeholder="End Time" 
         value={formData.endTime} 
         onChange={handleInputChange} 
-        className="w-full p-2 border border-gray-300 rounded-md"
+        className="w-full p-2 border border-gray-800 rounded-md"
       />
       <input 
         type="text" 
@@ -63,14 +63,15 @@ const ClassForm = ({ addClass }) => {
         placeholder="Instructor" 
         value={formData.instructor} 
         onChange={handleInputChange} 
-        className="w-full p-2 border border-gray-300 rounded-md"
+        className="w-full p-2 border border-gray-800 rounded-md"
       />
-      <button type="submit" className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600">
+      <button type="submit" className="bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-500 mx-auto block">
         Add Class
       </button>
     </form>
   </div>
   
+
 
   );
 };
